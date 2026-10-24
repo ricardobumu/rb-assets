@@ -1,1 +1,1 @@
-# Assets Públicos - Ricardo Buriticá Peluquería Consciente
+# Assets Públicos - Ricardo Buriticá Peluquero Consciente
