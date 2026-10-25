@@ -1,0 +1,42 @@
+# Archivos de entorno y secretos (el asistente de Cursor no debe leerlos)
+.env
+.env.*
+!.env.example
+secrets/
+*.secret
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+credentials.json
+service-account*.json
+
+# Datos de clientes (RGPD): nunca al contexto del asistente
+Clientes/
+clientes/
+**/Clientes/**
+**/clientes/**
+fichas_clientes/
+consentimientos/
+*DNI*
+*dni*
+
+# Dependencias, builds y caché
+node_modules/
+.next/
+dist/
+build/
+.cache/
+
+# Pesados, bases de datos y logs
+*.log
+*.zip
+*.tar.gz
+*.sqlite
+*.db
+
+# Sistema
+.git/
+.DS_Store
+Thumbs.db

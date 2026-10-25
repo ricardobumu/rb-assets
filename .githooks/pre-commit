@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Barrera de secretos versionada de rb-assets.
+# Activacion por clon: git config core.hooksPath .githooks
+# --redact evita escribir secretos detectados en terminal o logs.
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "ERROR: Gitleaks no esta instalado. Commit bloqueado." >&2
+  echo "Instala Gitleaks y vuelve a ejecutar el commit." >&2
+  exit 1
+fi
+
+exec gitleaks git --staged --verbose --redact
