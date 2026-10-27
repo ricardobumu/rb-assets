@@ -1,0 +1,3 @@
+# Reglas por defecto de Gitleaks. Sin esta línea una configuración propia las sustituiría y no detectaría nada.
+[extend]
+useDefault = true
